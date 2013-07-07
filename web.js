@@ -8,6 +8,7 @@ app.get('/', function(request, response) {
 
   //Read file index.html
   contents = fs.readFileSync('index.html');
+
   //Send file content to the browser
   response.send(contents.toString());
 });
